@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>D:\XaProjects\TicTacToe\TicTacToe\TicTacToe\App.xaml</FilePath>
+      <Hash>A3-47-61-4B-91-DA-0C-76-46-15-59-40-AC-01-A4-38</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\XaProjects\TicTacToe\TicTacToe\TicTacToe\MainPage.xaml</FilePath>
+      <Hash>08-1C-61-3F-33-08-DE-17-79-BD-A5-0C-84-37-01-19</Hash>
+      <Properties>
+        <string>BackgroundColor</string>
+      </Properties>
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

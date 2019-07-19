@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TicTacToe"
+             x:Class="TicTacToe.MainPage"
+             BackgroundColor="#272121">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="RestartFA" Text="&#xf2f9;" FontSize="15" Grid.Column="0" Grid.Row="0" TextColor="#494949" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" />
+            </Label.FontFamily>
+        </Label>
+        <Label x:Name="ExitFA" Text="&#xf2f5;" FontSize="15" TextColor="#494949" Grid.Column="4" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" />
+            </Label.FontFamily>
+        </Label>
+
+        <Label x:Name="MainLabel" Text="Turn: Cross" Grid.Row="1" TextColor="#FFF" FontSize="15" Grid.Column="2" Margin="0" LineBreakMode="WordWrap" HorizontalTextAlignment="Center"/>
+
+        <Button x:Name="button1" Text="" FontSize="45" TextColor="#FFF" Grid.Row="2" Grid.Column="1" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+        <Button x:Name="button2" Text="" FontSize="45" TextColor="#FFF" Grid.Row="2" Grid.Column="2" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+        <Button x:Name="button3" Text="" FontSize="45" TextColor="#FFF" Grid.Row="2" Grid.Column="3" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+
+        <Button x:Name="button4" Text="" FontSize="45" TextColor="#FFF" Grid.Row="3" Grid.Column="1" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+        <Button x:Name="button5" Text="" FontSize="45" TextColor="#FFF" Grid.Row="3" Grid.Column="2" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+        <Button x:Name="button6" Text="" FontSize="45" TextColor="#FFF" Grid.Row="3" Grid.Column="3" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+
+        <Button x:Name="button7" Text="" FontSize="45" TextColor="#FFF" Grid.Row="4" Grid.Column="1" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+        <Button x:Name="button8" Text="" FontSize="45" TextColor="#FFF" Grid.Row="4" Grid.Column="2" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+        <Button x:Name="button9" Text="" FontSize="45" TextColor="#FFF" Grid.Row="4" Grid.Column="3" BackgroundColor="#494949" Clicked="Button_Clicked">
+            <Button.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="Myriad Pro Bold.ttf#Tic Tac Toe" />
+            </Button.FontFamily>
+        </Button>
+
+        <Button x:Name="buttonPlayAgain" Text="Play again" FontSize="10" Grid.Row="6" Grid.Column="2" Clicked="PlayAgain_Clicked" IsVisible="False"/>
+    </Grid>
+
+</ContentPage>
